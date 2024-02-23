@@ -1,0 +1,11 @@
+node_modules
+<<<<<<< HEAD
+dist
+.env
+||||||| 12ccb1c
+dist
+=======
+dist
+.env
+.DS_Store
+>>>>>>> oops-indexer

@@ -1,0 +1,43 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node ./dist/main.js",
+    "dev": "tsx watch ./src/main.ts",
+    "migrate": "pnpm dlx drizzle-kit generate:sqlite",
+    "push": "pnpm dlx drizzle-kit push:sqlite",
+    "db:reset": "mv ./src/db/sqlite.db ./src/db/old.db && pnpm migrate && pnpm push",
+    "export": "tsx ./src/scripts/exportData.ts"
+  },
+  "keywords": [],
+  "author": "mulf",
+  "license": "MIT",
+  "devDependencies": {
+<<<<<<< HEAD
+    "@types/node": "20.11.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+||||||| 12ccb1c
+    "@types/node": "18.17",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+=======
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "~20.11.0",
+    "drizzle-kit": "^0.20.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.29.3",
+    "nanoid": "^5.0.4",
+    "viem": "^2.0.6",
+    "wtfnode": "^0.9.1"
+>>>>>>> oops-indexer
+  }
+}
